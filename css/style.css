@@ -36,6 +36,12 @@ img {
 
 /* header */
 
+/* .header {
+  border-bottom-width: 1px;
+  border-bottom-color: #ececec;
+  border-bottom-style: solid;
+} */
+
 /* nav */
 .logo {
   color: var(--primary-text-color);
@@ -133,10 +139,10 @@ img {
   background-color: #2f303a;
   text-align: center;
   min-height: 600px;
+  padding-top: 200px;
 }
 
 .hero-title {
-  padding-top: 200px;
   padding-bottom: 30px;
 
   color: var(--second-text-color);
@@ -285,24 +291,18 @@ img {
 /* footer */
 
 .contac {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-style: initial;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
   background-color: #2f303a;
+  padding-top: 60px;
+}
+
+.contac:first-child {
+  padding-top: 30px;
 }
 
 .logo-ft,
-.contac .info,
-.contac .addres {
+.contac-info,
+.contac-addres {
   display: block;
-}
-
-.logo-ft {
-  padding-top: 60px;
-  padding-bottom: 20px;
 }
 
 .logo-second {
@@ -314,39 +314,47 @@ img {
   letter-spacing: 0.03em;
 }
 
-.contac .addres {
-  margin-bottom: 9px;
+.address .contac-addres,
+.address .contac-info {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-style: initial;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
 
+.address:first-child {
+  padding-top: 20px;
+}
+
+.address .contac-addres {
+  padding-top: 20px;
   color: var(--second-text-color);
 }
 
-.contac .addres:hover,
-.contac .addres:focus {
+.contac-addres:hover,
+.contac-addres:focus {
   color: var(--link-hover-color);
 }
 
-.contac .info:hover,
-.contac .info:focus {
+.contac-info:hover,
+.contac-info:focus {
   color: var(--link-hover-color);
-}
-
-.contac .info:not(:last-child) {
-  padding-bottom: 9px;
-}
-
-.contac .info:last-child {
-  padding-bottom: 60px;
 }
 
 /* portfolio */
 .example {
+  border-top-width: 1px;
+  border-top-color: #ececec;
+  border-top-style: solid;
   padding-top: 94px;
 }
 
 .main-filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  padding-bottom: 34px;
 }
 
 .main-filter .item:not(:last-child) {
@@ -390,8 +398,6 @@ img {
 }
 
 .example-item {
-  padding: 20px 24px 4px 24px;
-
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -400,13 +406,13 @@ img {
 }
 
 .example-descript {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-
   color: var(--text-title-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+
+.exposition {
+  padding: 24px 20px;
 }
