@@ -246,7 +246,7 @@ img {
 }
 
 /* our team */
-.team {
+.team-hd {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -269,7 +269,7 @@ img {
   margin-right: 30px;
 }
 
-.team .name {
+.team-name {
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
@@ -282,7 +282,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.team .position {
+.team-position {
   margin-bottom: 30px;
   text-align: center;
 
